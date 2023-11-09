@@ -17,4 +17,9 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      '@ui_matias/fusion-ui': path.resolve(__dirname, 'node_modules/@ui_matias/fusion-ui'),
+    },
+  },
 };
