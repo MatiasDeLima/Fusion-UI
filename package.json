@@ -1,5 +1,5 @@
 {
-  "name": "fusion-ui",
+  "name": "@ui_matias/fusion-ui",
   "version": "1.0.0",
   "description": "Create Mordern UI Library",
   "main": "index.js",
