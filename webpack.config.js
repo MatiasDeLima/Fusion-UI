@@ -5,7 +5,7 @@ module.exports = {
   output: {
     filename: 'fusion-ui-library.js',  // O nome do arquivo de saída
     path: path.resolve(__dirname, 'dist'), // A pasta de saída
-    library: 'fusion-ui-library', // Nome da biblioteca global
+    library: 'FusionUiLibrary', // Nome da biblioteca global
     libraryTarget: 'umd', // Tipo de biblioteca
   },
   module: {

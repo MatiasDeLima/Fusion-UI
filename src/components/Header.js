@@ -26,7 +26,7 @@ export default class HeaderComponent {
     }
 
     createHeader() {
-        const body = document.body;
+        const body = document.querySelector(".header");
 
         const linksHTML = this.links
             .map((link) => `
@@ -37,29 +37,27 @@ export default class HeaderComponent {
             ).join("");
 
         body.innerHTML = `
-            <header class="header">
-                <nav class="nav container">
-                    <a href="${this.logoUrl}" class="nav__logo">${this.logoText}</a>
+            <nav class="nav container">
+                <a href="${this.logoUrl}" class="nav__logo">${this.logoText}</a>
 
-                    <div class="nav__menu" id="nav-menu">
-                        <ul class="nav__list">
-                            ${linksHTML}
-                        </ul>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                         ${linksHTML}
+                    </ul>
 
-                        <div class="nav__close" id="nav-close">
-                            <i class="ri-close-line"></i>
-                        </div>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
                     </div>
+                </div>
 
-                    <div class="nav__buttons">
-                        <button class="button">${this.buttonText}</button>
+                <div class="nav__buttons">
+                    <button class="button">${this.buttonText}</button>
 
-                        <div class="nav__toggle" id="nav-toggle">
-                            <i class="ri-menu-line"></i>
-                        </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </nav>
         `;
 
 
